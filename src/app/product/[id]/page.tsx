@@ -111,7 +111,7 @@ const ProductPage = async ({ params }: { params: Promise<{ id: string }> } ) => 
                             <div className='flex items-baseline gap-1'>
                                 <span className='text-xs font-bold text-red-600'>US</span>
                                 <span className='text-5xl font-black text-red-600 tracking-tight'>
-                                    {formatPrice(product.price).replace('$', '')}
+                                    {formatPrice(product.price).replace('NPR', '')}
                                 </span>
                             </div>
                             <div className='flex flex-col'>

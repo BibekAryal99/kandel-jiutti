@@ -113,3 +113,16 @@ body {
     transform: translateY(0);
   }
 }
+/* This will align the logo to the left */
+.logo-container {
+  display: flex;  /* Use Flexbox */
+  justify-content: flex-start; /* Align to the left */
+  padding-left: 16px; /* Optional: Adjust padding as needed */
+}
+
+/* Optional: If you want the image itself to be smaller or responsive */
+.logo-container img {
+  object-contain:var(--accent);
+  width: 100px; /* You can adjust width */
+  height: auto;
+}

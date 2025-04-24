@@ -6,5 +6,4 @@ const nextConfig: NextConfig = {
     domains: ['cdn.sanity.io']
   }
 };
-
 export default nextConfig;

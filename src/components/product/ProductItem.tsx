@@ -2,7 +2,7 @@ import { Product } from '@/sanity.types';
 import { urlFor } from '@/sanity/lib/image';
 import Image from 'next/image';
 import Link from 'next/link';
-import React from 'react'
+import React from 'react';
 
 type ProductItemProps = {
     product: Product;
@@ -31,7 +31,7 @@ const ProductItem = ({ product }: ProductItemProps) => {
             <div className='flex flex-col'>
                 <div className='flex items-center gap-2'>
                     <span className='text-lg font-bold text-red-500'>${(product.price || 0).toFixed(2)}</span>
-                    <span className='text-sm text-gray-400 line-through'>${((product.price || 0) * 5).toFixed(2)}</span>
+                    <span className='text-sm text-gray-400 line-through'>USD{((product.price || 0) * 5).toFixed(2)}</span>
                 </div>
                 <div className='text-xs text-green-500 font-semibold mb-2'>
                     🔥 {100 + Math.abs(product._id.split("").reduce((acc, char) => acc + char.charCodeAt(0), 0) % 500)}+ sold in last 24h

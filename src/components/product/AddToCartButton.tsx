@@ -103,4 +103,4 @@ const AddToCartButton = ({ product }: AddToCartButtonProps) => {
   )
 }
 
-export default AddToCartButton
+export default AddToCartButton 

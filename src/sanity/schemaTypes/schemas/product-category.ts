@@ -22,4 +22,4 @@ export const productCategory = defineType({
             type: "slug",
         }),
     ]
-})
+})              
